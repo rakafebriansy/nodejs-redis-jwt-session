@@ -71,8 +71,12 @@ const login = async (request) => {
     //     }
     // });
 
-    // JWT
-    const token = tokenService.create(user);
+    // // JWT
+    // const token = tokenService.create(user);
+
+    // Redis cache + jwt
+    const token = await tokenService.create(user);
+
     return { token };
 }
 

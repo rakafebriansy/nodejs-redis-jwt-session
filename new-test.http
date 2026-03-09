@@ -24,4 +24,4 @@ Accept: application/json
 GET http://localhost:3000/api/hello
 Content-Type: application/json
 Accept: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJha2EiLCJpYXQiOjE3NzMwNzIyODIsImV4cCI6MTc3MzE1ODY4Mn0.M_xdF40JI15eltSbgNPTash0ojE5ByUnXl9K2Ww2xzs
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJha2EiLCJpYXQiOjE3NzMwNzM2NDAsImV4cCI6MTc3MzE2MDA0MH0.8NwcqbfdFJBTIAQVBQTVWzUJ4PqptQVfzRE1DirjaGM

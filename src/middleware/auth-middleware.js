@@ -1,4 +1,4 @@
-import {prismaClient} from "../application/database.js";
+import { prismaClient } from "../application/database.js";
 import tokenService from "../service/token-service.js";
 
 export const authMiddleware = async (req, res, next) => {
@@ -16,8 +16,11 @@ export const authMiddleware = async (req, res, next) => {
         //     }
         // });
 
-        // JWT
-        const user = tokenService.verify(token);        
+        // // JWT
+        // const user = tokenService.verify(token);        
+
+        // Redis cache + jwt
+        const user = await tokenService.verify(token);
 
         if (!user) {
             res.status(401).json({
