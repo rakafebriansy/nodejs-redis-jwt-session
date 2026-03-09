@@ -4,12 +4,14 @@ import { logger } from "../application/logging.js";
 const secret = 'secret';
 
 const create = (user) => {
-    return jwt.sign({
+    const token = jwt.sign({
         username: user.username
     }, secret, {
         algorithm: 'HS256',
         expiresIn: '1d'
     });
+
+    return token;
 }
 
 const verify = (token) => {

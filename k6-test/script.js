@@ -22,7 +22,8 @@ export const options = {
 export default function () {
     const response = http.get('http://localhost:3000/api/hello', {
         headers: {
-            'Authorization': '1efc03f3-abde-4888-aee6-e1764c13529e',
+            // 'Authorization': '1efc03f3-abde-4888-aee6-e1764c13529e', //opaque
+            'Authorization': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJha2EiLCJpYXQiOjE3NzMwNzIyODIsImV4cCI6MTc3MzE1ODY4Mn0.M_xdF40JI15eltSbgNPTash0ojE5ByUnXl9K2Ww2xzs', //jwt
         }
     });
 
