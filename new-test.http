@@ -1,0 +1,27 @@
+POST http://localhost:3000/api/users
+Content-Type: application/json
+Accept: application/json
+
+{
+    "username": "raka",
+    "password": "raka",
+    "name": "Raka"
+}
+
+### Login
+
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+Accept: application/json
+
+{
+    "username": "raka",
+    "password": "raka",
+}
+
+### Say Hello
+
+GET http://localhost:3000/api/hello
+Content-Type: application/json
+Accept: application/json
+Authorization: 1efc03f3-abde-4888-aee6-e1764c13529e

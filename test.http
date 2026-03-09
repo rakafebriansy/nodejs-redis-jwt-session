@@ -1,7 +1,4 @@
-POST http://localhost:3000/api/users
-Content-Type: application/json
-Accept: application/json
-
+z
 {
   "username" : "khannedy",
   "password" : "rahasia",

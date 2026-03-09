@@ -1,4 +1,5 @@
 import express from "express";
+import helloController from "../controller/hello-controller.js";
 import userController from "../controller/user-controller.js";
 import contactController from "../controller/contact-controller.js";
 import addressController from "../controller/address-controller.js";
@@ -6,6 +7,9 @@ import {authMiddleware} from "../middleware/auth-middleware.js";
 
 const userRouter = new express.Router();
 userRouter.use(authMiddleware);
+
+// Hello API
+userRouter.get('/api/hello', helloController.hello);
 
 // User API
 userRouter.get('/api/users/current', userController.get);
