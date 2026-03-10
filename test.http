@@ -1,8 +1,8 @@
 z
 {
-  "username" : "khannedy",
-  "password" : "rahasia",
-  "name" : "Eko Kurniawan"
+  "username" : "raka",
+  "password" : "password",
+  "name" : "Raka Febrian"
 }
 
 ###
@@ -12,8 +12,8 @@ Content-Type: application/json
 Accept: application/json
 
 {
-  "username" : "khannedy",
-  "password" : "rahasia"
+  "username" : "raka",
+  "password" : "password"
 }
 
 ###
@@ -31,7 +31,7 @@ Accept: application/json
 Authorization: 19dfc22d-4545-45a9-9b36-ec0fc3fee291
 
 {
-  "name" : "Eko Kurniawan Khannedy"
+  "name" : "Raka Febrian raka"
 }
 
 ###
